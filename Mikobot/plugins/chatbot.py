@@ -72,7 +72,7 @@ async def kukiadd(update: Update, context: ContextTypes.DEFAULT_TYPE):
             )
         else:
             await update.effective_message.edit_text(
-                f"Hey Darling Chatbot enable by {mention_html(user.id, user.first_name)}.",
+                f"Hey, Chatbot enabled by {mention_html(user.id, user.first_name)}.",
                 parse_mode=ParseMode.HTML,
             )
 
