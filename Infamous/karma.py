@@ -10,26 +10,20 @@ from Mikobot import BOT_USERNAME, OWNER_ID, SUPPORT_CHAT
 
 # <============================================== CONSTANTS =========================================================>
 START_IMG = [
-    "https://telegra.ph/file/40b93b46642124605e678.jpg",
-    "https://telegra.ph/file/01a2e0cd1b9d03808c546.jpg",
-    "https://telegra.ph/file/ed4385c26dcf6de70543f.jpg",
-    "https://telegra.ph/file/33a8d97739a2a4f81ddde.jpg",
-    "https://telegra.ph/file/cce9038f6a9b88eb409b5.jpg",
-    "https://telegra.ph/file/262c86393730a609cdade.jpg",
-    "https://telegra.ph/file/33a8d97739a2a4f81ddde.jpg",
+    "https://telegra.ph/file/f2944fa1c6206a7e446b7.jpg",
+    "https://telegra.ph/file/ad1ab43fa6b423f8f40ed.jpg",
+    "https://telegra.ph/file/df9dbbcdd7e2146f45cb2.jpg",
+    "https://telegra.ph/file/956d23eef999d37f9e2fe.jpg",
+    "https://telegra.ph/file/82d45e1805d601818eb6c.jpg",
+    
 ]
 
-HEY_IMG = "https://telegra.ph/file/33a8d97739a2a4f81ddde.jpg"
+HEY_IMG = "https://telegra.ph/file/df9dbbcdd7e2146f45cb2.jpg"
 
 ALIVE_ANIMATION = [
-    "https://telegra.ph//file/f9e2b9cdd9324fc39970a.mp4",
-    "https://telegra.ph//file/8d4d7d06efebe2f8becd0.mp4",
-    "https://telegra.ph//file/c4c2759c5fc04cefd207a.mp4",
-    "https://telegra.ph//file/b1fa6609b1c4807255927.mp4",
-    "https://telegra.ph//file/f3c7147da6511fbe27c25.mp4",
-    "https://telegra.ph//file/39071b73c02e3ff5945ca.mp4",
-    "https://telegra.ph//file/8d4d7d06efebe2f8becd0.mp4",
-    "https://telegra.ph//file/6efdd8e28756bc2f6e53e.mp4",
+    "https://telegra.ph/file/8749171543f603664546b.mp4",
+    "https://telegra.ph/file/05bb011744f84bffae52d.mp4",
+    
 ]
 
 BAN_GIFS = [
@@ -38,12 +32,12 @@ BAN_GIFS = [
 
 
 KICK_GIFS = [
-    "https://telegra.ph//file/79a6c527e6e6d530bcdc8.mp4",
+    "https://tenor.com/BBLQlTQBCZ.gif",
 ]
 
 
 MUTE_GIFS = [
-    "https://telegra.ph//file/b4faf6e390d72d286abdf.mp4",
+    "https://tenor.com/bAdFP.gif",
 ]
 
 FIRST_PART_TEXT = "✨ *ʜᴇʟʟᴏ* `{}` . . ."
