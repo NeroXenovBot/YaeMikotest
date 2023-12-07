@@ -45,10 +45,10 @@ MUTE_GIFS = [
 
 FIRST_PART_TEXT = "⚡ *Hey There!!* `{}` . . ."
 
-PM_START_TEXT = "────「 Yuta Okkotsu 」────
+PM_START_TEXT = ""────「 Yuta Okkotsu 」────
 My Name Is Yuta Okkotsu ◎! ㅤ
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖
-◍ I Am  a Group Management Bot , Built by Weebs for Weebs .
+◍ I Am  a Group Management Bot 
 ➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 ◍ I Specialize In Managing Anime Centric Communities, hit /help to know more!!"
 
