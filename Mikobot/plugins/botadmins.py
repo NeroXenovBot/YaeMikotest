@@ -52,17 +52,17 @@ async def botstaff(update: Update, context: ContextTypes.DEFAULT_TYPE):
         reply = ""
 
     true_dev = list(set(DEV_USERS) - {OWNER_ID})
-    reply += "\n\n➪ <b>SPECIAL GRADE USERS :</b>\n"
+    reply += "\n\n➪ <b>SPECIAL GRADES :</b>\n"
     reply += "\n".join(await get_users_list(context, true_dev)) or "No Dev Users"
 
     true_sudo = list(set(DRAGONS) - set(DEV_USERS))
-    reply += "\n\n➪ <b>A GRADE USERS :</b>\n"
+    reply += "\n\n➪ <b>GRADE 1 USERS :</b>\n"
     reply += "\n".join(await get_users_list(context, true_sudo)) or "No Sudo Users"
 
-    reply += "\n\n➪ <b>B GRADE USERS :</b>\n"
+    reply += "\n\n➪ <b>SEMI GRADE 1 USERS :</b>\n"
     reply += "\n".join(await get_users_list(context, DEMONS)) or "No Demon Users"
 
-    reply += "\n\n➪ <b>NORMAL GRADE USERS :</b>\n"
+    reply += "\n\n➪ <b>GRADE 2 USERS :</b>\n"
     reply += (
         "\n".join(await get_users_list(context, WOLVES))
         or "No additional whitelisted users"
