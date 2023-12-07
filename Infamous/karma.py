@@ -45,12 +45,8 @@ MUTE_GIFS = [
 
 FIRST_PART_TEXT = "⚡ *Hey There!!* `{}` . . ."
 
-PM_START_TEXT = ""────「 Yuta Okkotsu 」────
-My Name Is Yuta Okkotsu ◎! ㅤ
-➖➖➖➖➖➖➖➖➖➖➖➖➖➖
-◍ I Am  a Group Management Bot 
-➖➖➖➖➖➖➖➖➖➖➖➖➖➖
-◍ I Specialize In Managing Anime Centric Communities, hit /help to know more!!"
+PM_START_TEXT = "────「 Yuta Okkotsu 」────\nMy Name Is Yuta Okkotsu ◎!\n➖➖➖➖➖➖➖➖➖➖➖➖➖➖\n◍ I Am  a Group Management Bot 
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖\n◍ I Specialize In Managing Anime Centric Communities, hit /help to know more!!"
 
 START_BTN = [
     [
