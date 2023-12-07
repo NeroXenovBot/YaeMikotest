@@ -174,8 +174,8 @@ __help__ = """
 
 ➠ *Commands:*
 
-» @MIKO_V2BOT your message @username
-» @MIKO_V2BOT @username your message
+» @YUTA_XBOT your message @username
+» @YUTA_XBOT @username your message
 """
 
 __mod_name__ = "WHISPER-MSG"
