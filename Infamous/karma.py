@@ -39,6 +39,9 @@ BAN_GIFS = [
 
 KICK_GIFS = [
     "https://telegra.ph//file/b4faf6e390d72d286abdf.mp4"
+]
+
+
 MUTE_GIFS = [
     "https://telegra.ph//file/b4faf6e390d72d286abdf.mp4",
 ]
