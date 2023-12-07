@@ -38,42 +38,44 @@ BAN_GIFS = [
 
 
 KICK_GIFS = [
-    "https://telegra.ph//file/79a6c527e6e6d530bcdc8.mp4",
-]
-
-
+    "https://telegra.ph//file/b4faf6e390d72d286abdf.mp4"
 MUTE_GIFS = [
     "https://telegra.ph//file/b4faf6e390d72d286abdf.mp4",
 ]
 
-FIRST_PART_TEXT = "✨ *ʜᴇʟʟᴏ* `{}` . . ."
+FIRST_PART_TEXT = "⚡ *Hey There!!* `{}` . . ."
 
-PM_START_TEXT = "✨ *ɪ ᴀᴍ ᴍɪᴋᴏ, ᴀ ɢᴇɴꜱʜɪɴ ɪᴍᴘᴀᴄᴛ ᴛʜᴇᴍᴇᴅ ʀᴏʙᴏᴛ ᴡʜɪᴄʜ ᴄᴀɴ ʜᴇʟᴘ ʏᴏᴜ ᴛᴏ ᴍᴀɴᴀɢᴇ ᴀɴᴅ ꜱᴇᴄᴜʀᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴡɪᴛʜ ʜᴜɢᴇ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ*"
+PM_START_TEXT = "────「 <a href="https://t.me/yuta_xbot">Yuta Okkotsu</a> 」────
+My Name Is Yuta Okkotsu ◎! ㅤ
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+◍ I Am  a Group Management Bot , Built by Weebs for Weebs .
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+◍ I Specialize In Managing Anime Centric Communities, hit /help to know more!!"
 
 START_BTN = [
     [
         InlineKeyboardButton(
-            text="⇦ ADD ME ⇨",
+            text="➕ 𝘼𝙙𝙙 𝙔𝙪𝙩𝙖 𝙏𝙤 𝙈𝙖𝙣𝙖𝙜𝙚 𝙔𝙤𝙪𝙧 𝙂𝙧𝙤𝙪𝙥 ➕",
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         ),
     ],
     [
-        InlineKeyboardButton(text="HELP", callback_data="help_back"),
+        InlineKeyboardButton(text="💬𝙎𝙪𝙥𝙥𝙤𝙧𝙩 𝙂𝙧𝙤𝙪𝙥", url=f"https://t.me/{SUPPORT_CHAT}"),
+        InlineKeyboardButton(text="👾𝘽𝙤𝙩 𝙄𝙣𝙛𝙤", callback_data="Miko_"),
     ],
     [
-        InlineKeyboardButton(text="DETAILS", callback_data="Miko_"),
-        InlineKeyboardButton(text="AI", callback_data="ai_handler"),
-        InlineKeyboardButton(text="SOURCE", callback_data="git_source"),
+        InlineKeyboardButton(text="🗿𝘾𝙧𝙚𝙖𝙩𝙤𝙧 ", url=f"https://t.me/xenov7x"),
+        InlineKeyboardButton(text="🤖𝘼𝙞 𝙭 𝘾𝙝𝙖𝙩𝙂𝙋𝙏", callback_data="ai_handler"),
     ],
     [
-        InlineKeyboardButton(text="CREATOR", url=f"tg://user?id={OWNER_ID}"),
+        InlineKeyboardButton(text="⛩ 𝙃𝙚𝙡𝙥 𝙖𝙣𝙙 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨 ⛩", callback_data="help_back"),
     ],
 ]
 
 GROUP_START_BTN = [
     [
         InlineKeyboardButton(
-            text="⇦ ADD ME ⇨",
+            text="➕ 𝘼𝙙𝙙 𝙔𝙪𝙩𝙖 𝙏𝙤 𝙈𝙖𝙣𝙖𝙜𝙚 𝙔𝙤𝙪𝙧 𝙂𝙧𝙤𝙪𝙥 ➕",
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         ),
     ],
@@ -85,19 +87,19 @@ GROUP_START_BTN = [
 
 ALIVE_BTN = [
     [
-        ib(text="UPDATES", url="https://t.me/Hydra_Updates"),
-        ib(text="SUPPORT", url="https://t.me/hydraXsupport"),
+        ib(text="UPDATES", url="https://t.me/Yuta_Support"),
+        ib(text="SUPPORT", url="https://t.me/SN_BotSupport"),
     ],
     [
         ib(
-            text="⇦ ADD ME ⇨",
+            text="➕ 𝘼𝙙𝙙 𝙔𝙪𝙩𝙖 𝙏𝙤 𝙈𝙖𝙣𝙖𝙜𝙚 𝙔𝙤𝙪𝙧 𝙂𝙧𝙤𝙪𝙥 ➕",
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         ),
     ],
 ]
 
 HELP_STRINGS = """
-🫧 *Yae-Miko* 🫧
+⚡ *Yuta Okkotsu* ⚡
 
 ☉ *Here, you will find a list of all the available commands.*
 
