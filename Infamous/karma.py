@@ -42,7 +42,13 @@ MUTE_GIFS = [
 
 FIRST_PART_TEXT = "⚡ *Hey There!!* {} . . ."
 
-PM_START_TEXT = "𝘔𝘺 𝘕𝘢𝘮𝘦 𝘐𝘴 𝘠𝘶𝘵𝘢 𝘖𝘬𝘬𝘰𝘵𝘴𝘶 ◎!\n➖➖➖➖➖➖l"
+PM_START_TEXT = "**────「 <a href="https://t.me/yuta_xbot">Yuta Okkotsu</a> 」────
+Yo! [{m.from_user.first_name}](http://t.me/{m.from_user.username}),
+My Name Is Yuta Okkotsu ◎! ㅤ
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+◍ I Am  a Group Management Bot , Built by Weebs for Weebs .
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+◍ I Specialize In Managing Anime Centric Communities, hit /help to know more!!**"
 
 START_BTN = [
     [
