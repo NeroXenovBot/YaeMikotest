@@ -9,16 +9,6 @@ from telegram import InlineKeyboardButton
 from Mikobot import BOT_USERNAME, OWNER_ID, SUPPORT_CHAT
 
 # <============================================== CONSTANTS =========================================================>
-START_IMG = [
-    "https://telegra.ph/file/40b93b46642124605e678.jpg",
-    "https://telegra.ph/file/01a2e0cd1b9d03808c546.jpg",
-    "https://telegra.ph/file/ed4385c26dcf6de70543f.jpg",
-    "https://telegra.ph/file/33a8d97739a2a4f81ddde.jpg",
-    "https://telegra.ph/file/cce9038f6a9b88eb409b5.jpg",
-    "https://telegra.ph/file/262c86393730a609cdade.jpg",
-    "https://telegra.ph/file/33a8d97739a2a4f81ddde.jpg",
-]
-
 HEY_IMG = "https://telegra.ph/file/33a8d97739a2a4f81ddde.jpg"
 
 ALIVE_ANIMATION = [
@@ -45,8 +35,6 @@ KICK_GIFS = [
 MUTE_GIFS = [
     "https://telegra.ph//file/b4faf6e390d72d286abdf.mp4",
 ]
-
-FIRST_PART_TEXT = "⚡ *Hey There!!* `{}` . . ."
 
 PM_START_TEXT = "𝘔𝘺 𝘕𝘢𝘮𝘦 𝘐𝘴 𝘠𝘶𝘵𝘢 𝘖𝘬𝘬𝘰𝘵𝘴𝘶 ◎!\n➖➖➖➖➖➖➖➖➖➖➖➖➖➖\n◍ 𝘐 𝘈𝘮  𝘢 𝘎𝘳𝘰𝘶𝘱 𝘔𝘢𝘯𝘢𝘨𝘦𝘮𝘦𝘯𝘵 𝘉𝘰𝘵 , 𝘉𝘶𝘪𝘭𝘵 𝘣𝘺 𝘞𝘦𝘦𝘣𝘴 𝘧𝘰𝘳 𝘞𝘦𝘦𝘣𝘴 .\n➖➖➖➖➖➖➖➖➖➖➖➖➖➖/n◍ 𝘐 𝘚𝘱𝘦𝘤𝘪𝘢𝘭𝘪𝘻𝘦 𝘐𝘯 𝘔𝘢𝘯𝘢𝘨𝘪𝘯𝘨 𝘈𝘯𝘪𝘮𝘦 𝘊𝘦𝘯𝘵𝘳𝘪𝘤 𝘊𝘰𝘮𝘮𝘶𝘯𝘪𝘵𝘪𝘦𝘴, 𝘩𝘪𝘵 /help 𝘵𝘰 𝘬𝘯𝘰𝘸 𝘮𝘰𝘳𝘦!!"
 
