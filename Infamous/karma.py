@@ -40,6 +40,10 @@ MUTE_GIFS = [
     "https://tenor.com/bAdFP.gif",
 ]
 
+FIRST_PART_TEXT = "⚡ *Hey There!!* {} . . ."
+
+PM_START_TEXT = "𝘔𝘺 𝘕𝘢𝘮𝘦 𝘐𝘴 𝘠𝘶𝘵𝘢 𝘖𝘬𝘬𝘰𝘵𝘴𝘶 ◎!\n➖➖➖➖➖➖l"
+
 START_BTN = [
     [
         InlineKeyboardButton(
