@@ -15,11 +15,9 @@ from telegram.constants import ChatID, ChatType, ParseMode
 from telegram.error import BadRequest, Forbidden
 from telegram.ext import CallbackQueryHandler, CommandHandler, ContextTypes
 from telegram.helpers import mention_html
-
 import Database.sql.global_bans_sql as gban_sql
 import Database.sql.users_sql as user_sql
 from Database.sql.approve_sql import is_approved
-from Infamous.karma import START_IMG
 from Mikobot import DEV_USERS, DRAGONS, INFOPIC, OWNER_ID, function
 from Mikobot.__main__ import STATS, USER_INFO
 from Mikobot.plugins.helper_funcs.chat_status import check_admin, support_plus
@@ -203,7 +201,7 @@ async def stats(update: Update, context: ContextTypes.DEFAULT_TYPE):
     result = re.sub(r"(\d+)", r"<code>\1</code>", stats)
 
     await update.effective_message.reply_photo(
-        photo=str(choice(START_IMG)), caption=result, parse_mode=ParseMode.HTML
+        photo=str(choice(INFOPIC)), caption=result, parse_mode=ParseMode.HTML
     )
 
 
