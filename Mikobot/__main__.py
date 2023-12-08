@@ -259,9 +259,8 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 disable_web_page_preview=False,
             )
     else:
-        await message.reply_photo(
-            photo=str(choice(START_IMG)),
-            reply_markup=InlineKeyboardMarkup(GROUP_START_BTN),
+        await message.reply_text(
+            reply_markup=InlineKeyboardMarkup(GROUP_START_BTN)),
             caption="<b>I am Alive, but dead inside!</b>\n\n<b>Since​:</b> <code>{}</code>".format(
                 uptime
             ),
