@@ -21,8 +21,6 @@ START_IMG = [
 
 HEY_IMG = "https://telegra.ph/file/33a8d97739a2a4f81ddde.jpg"
 
-START_VIDEO = "https://telegra.ph/file/1d437041c880391619a2d.mp4"
-
 ALIVE_ANIMATION = [
     "https://telegra.ph//file/f9e2b9cdd9324fc39970a.mp4",
     "https://telegra.ph//file/8d4d7d06efebe2f8becd0.mp4",
