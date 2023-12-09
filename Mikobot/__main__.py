@@ -71,9 +71,9 @@ async def ai_handler_callback(update: Update, context: ContextTypes.DEFAULT_TYPE
         await query.message.edit_text(
             "🧠 *Artificial Intelligence Functions*:\n\n"
             "All Commands:\n"
-            "» /askgpt <write query>: A chatbot using GPT for responding to user queries.\n\n"
-            "» /palm <write prompt>: Performs a Palm search using a chatbot.\n\n"
-            "» /upscale <reply to image>: Upscales your image quality.",
+            "➽ /askgpt <write query>: A chatbot using GPT for responding to user queries.\n\n"
+            "➽ /palm <write prompt>: Performs a Palm search using a chatbot.\n\n"
+            "➽ /upscale <reply to image>: Upscales your image quality.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -242,9 +242,9 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 await IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
-            await asyncio.sleep(0.1)
+            await asyncio.sleep(0.2)
             guu = await update.effective_message.reply_text("⚡")
-            await asyncio.sleep(1.5)
+            await asyncio.sleep(1.8)
             await guu.delete()  # Await this line
             await message.reply_photo(
                 photo=str(choice(START_IMG)),
@@ -256,7 +256,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await message.reply_photo(
             photo=str(choice(START_IMG)),
             reply_markup=InlineKeyboardMarkup(GROUP_START_BTN),
-            caption="<b>I am Alive, but dead inside!</b>\n\n<b>Since​:</b> <code>{}</code>".format(
+            caption="<b>I am Alive!</b>\n\n<b>Since:</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -391,18 +391,18 @@ async def stats_back(update: Update, context: ContextTypes.DEFAULT_TYPE):
         mem = psutil.virtual_memory().percent
         disk = psutil.disk_usage("/").percent
         text = f"""
-System Stats @Yuta_xBot
+𝙎𝙮𝙨𝙩𝙚𝙢 𝙨𝙩𝙖𝙩𝙨@𝙔𝙖𝙚𝙈𝙞𝙠𝙤_𝙍𝙤𝙭𝙗𝙤𝙩
 ➖➖➖➖➖➖
-UPTIME ❍ {uptime}
-CPU ❍ {cpu}%
-RAM ❍ {mem}%
-DISK ❍ {disk}%
+UPTIME ➼ {uptime}
+CPU ➼ {cpu}%
+RAM ➼ {mem}%
+DISK ➼ {disk}%
 
-PYTHON ❍ {PYTHON_VERSION}
+PYTHON ➼ {PYTHON_VERSION}
 
-PTB ❍ {PTB_VERSION}
-TELETHON ❍ {TELETHON_VERSION}
-PYROGRAM ❍ {PYROGRAM_VERSION}
+PTB ➼ {PTB_VERSION}
+TELETHON ➼ {TELETHON_VERSION}
+PYROGRAM ➼ {PYROGRAM_VERSION}
 """
         await query.answer(text=text, show_alert=True)
 
@@ -412,7 +412,7 @@ async def gitsource_callback(update: Update, context: ContextTypes.DEFAULT_TYPE)
     await query.answer()
 
     if query.data == "git_source":
-        source_link = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        source_link = "https://github.com/Infamous-Hydra/YaeMiko"
         message_text = (
             f"*Here is the link for the public source repo*:\n\n{source_link}"
         )
@@ -430,7 +430,7 @@ async def gitsource_callback(update: Update, context: ContextTypes.DEFAULT_TYPE)
 
 
 async def repo(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    source_link = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    source_link = "https://github.com/Infamous-Hydra/YaeMiko"
     message_text = f"*Here is the link for the public source repo*:\n\n{source_link}"
 
     await context.bot.send_message(
@@ -446,9 +446,9 @@ async def Miko_about_callback(update: Update, context: ContextTypes.DEFAULT_TYPE
     if query.data == "Miko_":
         uptime = get_readable_time((time.time() - StartTime))
         message_text = (
-            f"» <b>Ai integration.</b>"
-            f"\n» <b>Advance management capability.</b>"
-            f"\n» <b>Anime bot functionality.</b>"
+            f"➲ <b>Ai integration.</b>"
+            f"\n➲ <b>Advance management capability.</b>"
+            f"\n➲ <b>Anime bot functionality.</b>"
             f"\n\n<b>USERS</b> » {sql.num_users()}"
             f"\n<b>CHATS</b> » {sql.num_chats()}"
             f"\n\n<b>Click on the buttons below for getting help and info about</b> {BOT_NAME}."
