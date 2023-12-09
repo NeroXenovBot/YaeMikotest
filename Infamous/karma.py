@@ -20,6 +20,8 @@ START_IMG = [
 
 HEY_IMG = "https://telegra.ph/file/df9dbbcdd7e2146f45cb2.jpg"
 
+AI_VIDEO = "https://telegra.ph/file/1d437041c880391619a2d.mp4"
+
 ALIVE_ANIMATION = [
     "https://telegra.ph/file/8749171543f603664546b.mp4",
     "https://telegra.ph/file/05bb011744f84bffae52d.mp4",
