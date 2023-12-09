@@ -65,12 +65,14 @@ TELETHON_VERSION = telethon.__version__
 
 # <============================================== FUNCTIONS =========================================================>
 async def ai_handler_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    await message.reply_photo(
+                photo=str(choice(AI_VIDEO)),
+                caption=
     query = update.callback_query
     if query.data == "ai_handler":
         await query.answer()
-        await query.message.reply_photo(
-                photo=str(choice(AI_VIDEO)),
-                caption="🧠 *Artificial Intelligence Functions*:\n\n"
+        await query.message.edit_text(
+            "🧠 *Artificial Intelligence Functions*:\n\n"
             "All Commands:\n"
             "➽ /askgpt <write query>: A chatbot using GPT for responding to user queries.\n\n"
             "➽ /palm <write prompt>: Performs a Palm search using a chatbot.\n\n"
