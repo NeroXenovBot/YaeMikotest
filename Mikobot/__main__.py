@@ -242,14 +242,21 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 await IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
+            first_name = update.effective_user.first_name
+            lol = await message.reply_photo(
+                photo=str(choice(START_IMG)),
+                caption=FIRST_PART_TEXT.format(escape_markdown(first_name)),
+                parse_mode=ParseMode.MARKDOWN,
+            )
             await asyncio.sleep(0.2)
-            guu = await update.effective_message.reply_text("⚡")
+            guu = await update.effective_message.reply_text("🐾")
             await asyncio.sleep(1.8)
             await guu.delete()  # Await this line
-            await message.reply_photo(
-                photo=str(choice(START_IMG)),
+            await update.effective_message.reply_text(
+                PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(START_BTN),
-                caption=PM_START_TEXT,
+                parse_mode=ParseMode.MARKDOWN,
+                disable_web_page_preview=False,
             )
     else:
         await message.reply_photo(
