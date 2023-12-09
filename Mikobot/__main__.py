@@ -249,7 +249,6 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
             await update.effective_message.reply_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(START_BTN),
-                parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=False,
             )
     else:
