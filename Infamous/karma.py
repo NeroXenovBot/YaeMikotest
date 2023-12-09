@@ -42,7 +42,7 @@ MUTE_GIFS = [
 
 FIRST_PART_TEXT = "⚡ *Hey There!!* {} . . ."
 
-PM_START_TEXT = "────「 <a href='telegra.ph/file/82d45e1805d601818eb6c.jpg'>Yuta Okkotsu</a> 」────\nMy Name Is Yuta Okkotsu ◎!\n➖➖➖➖➖➖➖➖➖➖➖➖➖➖\n◍ I Am  a Group Management Bot , Built by Weebs for Weebs .\n➖➖➖➖➖➖➖➖➖➖➖➖➖➖\n◍ I Specialize In Managing Anime Centric Communities, hit /help to know more!!"
+PM_START_TEXT = "────「 <a href='https://telegra.ph/file/82d45e1805d601818eb6c.jpg'>Yuta Okkotsu</a> 」────\nMy Name Is Yuta Okkotsu ◎!\n➖➖➖➖➖➖➖➖➖➖➖➖➖➖\n◍ I Am  a Group Management Bot , Built by Weebs for Weebs .\n➖➖➖➖➖➖➖➖➖➖➖➖➖➖\n◍ I Specialize In Managing Anime Centric Communities, hit /help to know more!!"
 
 START_BTN = [
     [
