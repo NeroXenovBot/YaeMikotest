@@ -246,10 +246,14 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
             guu = await update.effective_message.reply_text("⚡")
             await asyncio.sleep(1.8)
             await guu.delete()  # Await this line
+            
+            )
+                
             await message.reply_photo(
                 photo=str(choice(START_IMG)),
                 reply_markup=InlineKeyboardMarkup(START_BTN),
                 caption=PM_START_TEXT,
+                parse_mode=ParseMode.HTML,
             )
     else:
         await message.reply_photo(
