@@ -75,6 +75,7 @@ async def ai_handler_callback(update: Update, context: ContextTypes.DEFAULT_TYPE
             "➽ /palm <write prompt>: Performs a Palm search using a chatbot.\n\n"
             "➽ /upscale <reply to image>: Upscales your image quality.",
             parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=False,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -113,6 +114,7 @@ async def more_ai_handler_callback(update: Update, context: ContextTypes.DEFAULT
             "Command: /creative\n"
             "  • Description: Generates an image using the creative model.",
             parse_mode=ParseMode.HTML,
+            disable_web_page_preview=False,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -260,6 +262,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 uptime
             ),
             parse_mode=ParseMode.HTML,
+            
         )
 
 
@@ -289,7 +292,7 @@ async def error_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
         message = message[:4096]
     # Finally, send the message
     await context.bot.send_message(
-        chat_id=OWNER_ID, text=message, parse_mode=ParseMode.HTML
+        chat_id=OWNER_ID, text=message, parse_mode=ParseMode.HTML, disable_web_page_preview=False,
     )
 
 
@@ -352,7 +355,8 @@ async def help_button(update: Update, context: ContextTypes.DEFAULT_TYPE):
             curr_page = int(prev_match.group(1))
             await query.message.edit_text(
                 text=HELP_STRINGS,
-                parse_mode=ParseMode.MARKDOWN,
+                parse_mode=ParseMode.HTML,
+                disable_web_page_preview=False,
                 reply_markup=InlineKeyboardMarkup(
                     paginate_modules(curr_page - 1, HELPABLE, "help")
                 ),
@@ -455,7 +459,7 @@ async def Miko_about_callback(update: Update, context: ContextTypes.DEFAULT_TYPE
         )
         await query.message.edit_text(
             text=message_text,
-            disable_web_page_preview=True,
+            disable_web_page_preview=False,
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -482,7 +486,7 @@ async def Miko_about_callback(update: Update, context: ContextTypes.DEFAULT_TYPE
         await query.message.edit_text(
             text=message_text,
             parse_mode=ParseMode.HTML,
-            disable_web_page_preview=True,
+            disable_web_page_preview=False,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -505,7 +509,7 @@ async def Miko_about_callback(update: Update, context: ContextTypes.DEFAULT_TYPE
             PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME),
             reply_markup=InlineKeyboardMarkup(START_BTN),
             parse_mode=ParseMode.HTML,
-            disable_web_page_preview=True,
+            disable_web_page_preview=False,
         )
 
 
@@ -634,7 +638,8 @@ async def settings_button(update: Update, context: ContextTypes.DEFAULT_TYPE):
             ) + CHAT_SETTINGS[module].__chat_settings__(chat_id, user.id)
             await query.message.reply_text(
                 text=text,
-                parse_mode=ParseMode.MARKDOWN,
+                parse_mode=ParseMode.HTML,
+                disable_web_page_preview=False,
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
