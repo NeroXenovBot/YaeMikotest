@@ -67,7 +67,8 @@ TELETHON_VERSION = telethon.__version__
 async def ai_handler_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await message.reply_photo(
                 photo=str(choice(AI_VIDEO)),
-                caption=
+                (
+                    
     query = update.callback_query
     if query.data == "ai_handler":
         await query.answer()
