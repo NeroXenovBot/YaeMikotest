@@ -74,7 +74,7 @@ async def ai_handler_callback(update: Update, context: ContextTypes.DEFAULT_TYPE
             "➽ /askgpt <write query>: A chatbot using GPT for responding to user queries.\n\n"
             "➽ /palm <write prompt>: Performs a Palm search using a chatbot.\n\n"
             "➽ /upscale <reply to image>: Upscales your image quality.",
-            parse_mode=ParseMode.HTML,
+            parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -246,8 +246,11 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
             guu = await update.effective_message.reply_text("⚡")
             await asyncio.sleep(1.5)
             await guu.delete()  # Await this line
-            await update.effective_message.reply_text(
-                PM_START_TEXT,
+            
+            )
+            await message.reply_photo(
+                photo=str(choice(START_IMG)),
+                caption=PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(START_BTN),
                 parse_mode=ParseMode.HTML,
                 disable_web_page_preview=False,
