@@ -112,7 +112,7 @@ async def more_ai_handler_callback(update: Update, context: ContextTypes.DEFAULT
             "  • Description: Generates an image using the darkv2 model.\n\n"
             "Command: /creative\n"
             "  • Description: Generates an image using the creative model.",
-            parse_mode=ParseMode.MARKDOWN,
+            parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -201,8 +201,8 @@ async def send_help(chat_id, text, keyboard=None):
     await dispatcher.bot.send_message(
         chat_id=chat_id,
         text=text,
-        parse_mode=ParseMode.MARKDOWN,
-        disable_web_page_preview=True,
+        parse_mode=ParseMode.HTML,
+        disable_web_page_preview=False,
         reply_markup=keyboard,
     )
 
@@ -243,13 +243,13 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
         else:
             await asyncio.sleep(0.2)
-            guu = await update.effective_message.reply_sticker("CAACAgEAAx0Ccc2gWQACHNNlOIfYXHVBsKRejGP-X9WKqnHsgwAChwIAAnaSWEdzZEEpTpnvNx4E")
-            await asyncio.sleep(1.8)
+            guu = await update.effective_message.reply_sticker("CAACAgUAAxkBAAEQVO9ldFEjKP-7YzQ3UfmyVp3C-A5iGgACwwwAArh1oFeJdtKjaBGOUzME")
+            await asyncio.sleep(1.5)
             await guu.delete()  # Await this line
             await update.effective_message.reply_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(START_BTN),
-                parse_mode=ParseMode.MARKDOWN,
+                parse_mode=ParseMode.HTML,
                 disable_web_page_preview=False,
             )
     else:
@@ -362,7 +362,7 @@ async def help_button(update: Update, context: ContextTypes.DEFAULT_TYPE):
             next_page = int(next_match.group(1))
             await query.message.edit_text(
                 text=HELP_STRINGS,
-                parse_mode=ParseMode.MARKDOWN,
+                parse_mode=ParseMode.HTML,
                 reply_markup=InlineKeyboardMarkup(
                     paginate_modules(next_page + 1, HELPABLE, "help")
                 ),
@@ -371,7 +371,7 @@ async def help_button(update: Update, context: ContextTypes.DEFAULT_TYPE):
         elif back_match:
             await query.message.edit_text(
                 text=HELP_STRINGS,
-                parse_mode=ParseMode.MARKDOWN,
+                parse_mode=ParseMode.HTML,
                 reply_markup=InlineKeyboardMarkup(
                     paginate_modules(0, HELPABLE, "help")
                 ),
@@ -423,7 +423,7 @@ async def gitsource_callback(update: Update, context: ContextTypes.DEFAULT_TYPE)
 
         await query.edit_message_text(
             message_text,
-            parse_mode=ParseMode.MARKDOWN,
+            parse_mode=ParseMode.HTML,
             disable_web_page_preview=False,
             reply_markup=reply_markup,
         )
@@ -436,7 +436,7 @@ async def repo(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await context.bot.send_message(
         chat_id=update.effective_chat.id,
         text=message_text,
-        parse_mode=ParseMode.MARKDOWN,
+        parse_mode=ParseMode.HTML,
         disable_web_page_preview=False,
     )
 
@@ -481,7 +481,7 @@ async def Miko_about_callback(update: Update, context: ContextTypes.DEFAULT_TYPE
         )
         await query.message.edit_text(
             text=message_text,
-            parse_mode=ParseMode.MARKDOWN,
+            parse_mode=ParseMode.HTML,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -504,7 +504,7 @@ async def Miko_about_callback(update: Update, context: ContextTypes.DEFAULT_TYPE
         await query.message.edit_text(
             PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME),
             reply_markup=InlineKeyboardMarkup(START_BTN),
-            parse_mode=ParseMode.MARKDOWN,
+            parse_mode=ParseMode.HTML,
             disable_web_page_preview=True,
         )
 
