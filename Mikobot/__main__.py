@@ -244,7 +244,8 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 await IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
-            await update.effective_message.reply_sticker("CAACAgUAAxkBAAEQaZNldO_TlF81y09iQE_c2zdMdODULAACrAsAAsRvqVdVw0eZmLMb6DME")
+            await asyncio.sleep(0.1)
+            guu = await update.effective_message.reply_sticker("CAACAgUAAxkBAAEQaZNldO_TlF81y09iQE_c2zdMdODULAACrAsAAsRvqVdVw0eZmLMb6DME")
             await asyncio.sleep(1.5)
             await guu.delete()  # Await this line
             await update.effective_message.reply_text(
