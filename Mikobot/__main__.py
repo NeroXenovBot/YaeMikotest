@@ -244,13 +244,19 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 await IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
-            await message.reply_photo(
-                photo=str(choice(START_IMG)),
-                reply_markup=InlineKeyboardMarkup(START_BTN),
-                caption=update.effective_message.reply_text(
+            await asyncio.sleep(0.2)
+            guu = await update.effective_message.reply_text("staring..")
+            await asyncio.sleep(1.8)
+            await guu.delete()  # Await this line
+            await asyncio.sleep(0.1)
+            guu = await update.effective_message.reply_sticker("CAACAgUAAxkBAAEQaZNldO_TlF81y09iQE_c2zdMdODULAACrAsAAsRvqVdVw0eZmLMb6DME")
+            await asyncio.sleep(0.6)
+            await guu.delete()  # Await this line
+            await update.effective_message.reply_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(START_BTN),
                 parse_mode=ParseMode.MARKDOWN,
+                disable_web_page_preview=False,
             )
     else:
         await message.reply_photo(
