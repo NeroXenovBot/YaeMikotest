@@ -244,10 +244,18 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 await IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
-            await asyncio.sleep(0.2)
-            guu = await update.effective_message.reply_sticker("CAACAgUAAxkBAAEQVO9ldFEjKP-7YzQ3UfmyVp3C-A5iGgACwwwAArh1oFeJdtKjaBGOUzME")
-            await asyncio.sleep(1.5)
-            await guu.delete()  # Await this line
+            time.sleep(0.1)
+            lol.edit_text("💥")
+            time.sleep(0.4)
+            lol.edit_text("⚡")
+            time.sleep(0.4)
+            lol.edit_text("💫")
+            time.sleep(0.2)
+            lol.edit_text("💀")
+            time.sleep(0.2)
+            lol.edit_text("Started........")
+            time.sleep(0.2)
+            lol.delete()
             await update.effective_message.reply_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(START_BTN),
