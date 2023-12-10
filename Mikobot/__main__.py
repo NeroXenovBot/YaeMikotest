@@ -244,21 +244,10 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 await IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
-            time.sleep(0.1)
-            lol.edit_text("💥")
-            time.sleep(0.4)
-            lol.edit_text("⚡")
-            time.sleep(0.4)
-            lol.edit_text("💫")
-            time.sleep(0.2)
-            lol.edit_text("💀")
-            time.sleep(0.2)
-            lol.edit_text("Started........")
-            time.sleep(0.2)
-            lol.delete()
-            await update.effective_message.reply_text(
-                PM_START_TEXT,
+            await message.reply_photo(
+                photo=str(choice(START_IMG)),
                 reply_markup=InlineKeyboardMarkup(START_BTN),
+                caption=PM_START_TEXT,
                 parse_mode=ParseMode.HTML,
                 disable_web_page_preview=False,
             )
