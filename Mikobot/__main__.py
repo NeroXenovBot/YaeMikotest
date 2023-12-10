@@ -244,9 +244,9 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 await IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
+            await asyncio.sleep(0.1)
+            guu = await update.effective_message.reply_text("✨")
             await asyncio.sleep(0.2)
-            guu = await update.effective_message.reply_text("𝑾𝒉𝒂𝒕 𝒄𝒐𝒖𝒍𝒅 𝒃𝒆 𝒕𝒉𝒆 𝒐𝒅𝒅𝒔 𝒐𝒇 𝒖𝒔 𝒎𝒆𝒆𝒕𝒊𝒏𝒈... 🍂")
-            await asyncio.sleep(0.7)
             await guu.delete()  # Await this line
             await asyncio.sleep(0.1)
             guu = await update.effective_message.reply_sticker("CAACAgUAAxkBAAEQaZNldO_TlF81y09iQE_c2zdMdODULAACrAsAAsRvqVdVw0eZmLMb6DME")
