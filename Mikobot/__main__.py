@@ -249,7 +249,6 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 reply_markup=InlineKeyboardMarkup(START_BTN),
                 caption=PM_START_TEXT,
                 parse_mode=ParseMode.HTML,
-                disable_web_page_preview=False,
             )
     else:
         await message.reply_photo(
